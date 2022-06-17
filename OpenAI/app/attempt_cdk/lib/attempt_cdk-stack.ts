@@ -8,7 +8,7 @@ export class AttemptCdkStack extends Stack {
   
     const apiLambda = new lambda.Function(this, "ApiFunction", {
       runtime: lambda.Runtime.PYTHON_3_9,
-      code: lambda.Code.fromAsset("../path_bullshit"),
+      code: lambda.Code.fromAsset("../app"),
       handler: "attempt_api.handler",
     });
   }
