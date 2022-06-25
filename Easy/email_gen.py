@@ -1,5 +1,6 @@
 import random
 import string
+import webbrowser
 
 # Generate a random string of letters and digits between 4 and 20 characters
 def random_string(length):
@@ -14,3 +15,10 @@ def generate_credentials():
     return (generate_email_address(), random_string(10))
 
 print(generate_credentials())
+
+# navigate to gmail.com
+def navigate_to_gmail():
+    webbrowser.open("https://gmail.com")
+    # click on the "create account" button
+    xpath = //*[@id="view_container"]/div/div/div[2]/div/div[2]/div/div[2]/div/div/div[1]/div/button/span
+    

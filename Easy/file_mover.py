@@ -42,7 +42,7 @@ def move(dest, entry, name):
         old_Name = join(dest, name)
         new_Name = join(dest, unique_name)
         rename(old_Name, new_Name)
-    move(entry, dest, name)
+    move(entry, dest)
 
 class Mover(FileSystemEventHandler):
     def on_modified(self, event):
